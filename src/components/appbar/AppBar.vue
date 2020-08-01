@@ -39,10 +39,15 @@
 </script>
 
 <style scoped>
+  .appbar{
+    background: #f8f9fa;
+  }
   .nav-link{
     color: rgba(0,0,0,.5) !important;
   }
   .navbar-brand{
     color: rgba(0,0,0,.9) !important;
   }
+
+
 </style>
