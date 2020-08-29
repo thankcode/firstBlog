@@ -10,7 +10,11 @@
     "bootstrap-vue": "^2.1.0",
     "core-js": "^3.6.5",
     "element-ui": "^2.4.5",
-    "vue": "^2.6.11",
+    "highlight.js": "^10.1.2",
+    "marked": "^1.1.1",
+    "mavon-editor": "^2.9.0",
+    "valine": "^1.4.14",
+    "vue": "^2.6.12",
     "vue-router": "^3.2.0"
   },
   "devDependencies": {
@@ -30,7 +34,7 @@
     "sass-loader": "^8.0.0",
     "vue-cli-plugin-bootstrap-vue": "^0.6.0",
     "vue-cli-plugin-element": "^1.0.1",
-    "vue-template-compiler": "^2.6.11"
+    "vue-template-compiler": "^2.6.12"
   },
   "browserslist": [
     "> 1%",

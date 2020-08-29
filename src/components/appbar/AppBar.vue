@@ -9,7 +9,7 @@
 
           <b-collapse id="nav-collapse" is-nav>
             <b-navbar-nav>
-              <b-nav-item href="#">首页</b-nav-item>
+              <b-nav-item href="/">首页</b-nav-item>
               <b-nav-item href="#">文章归档</b-nav-item>
               <b-nav-item href="#">关于博客</b-nav-item>
               <b-nav-item href="#">友情链接</b-nav-item>

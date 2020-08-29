@@ -1,14 +1,32 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import  index from  '../components/index'
+
+const index = () => import('../components/index')
+const articles = () => import('../components/homepageleft/articles')
+const articlesContent = () => import('../components/homepageleft/articlesContent')
+
 
 Vue.use(VueRouter)
 
   const routes = [
   {
     path: '/',
-    component: index
+    component: index,
+    children:[
+      {
+        path:'',
+        component:articles
+      },
+      {
+        path:'/articles/:id',
+        component:articlesContent
+      }
+    ]
   },
+  {
+    path: '*',
+    redirect: '/'
+  }
 ]
 
 const router = new VueRouter({

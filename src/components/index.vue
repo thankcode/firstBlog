@@ -8,6 +8,9 @@
         <b-row align-h="between">
           <!--左侧文章-->
           <b-col lg="7" sm="12">
+            <!--文章-->
+            <!-- :key="$route.fullPath" 解决请求不跳转-->
+            <router-view :key="$route.fullPath"></router-view>
           </b-col>
           <!--右侧导航-->
           <b-col lg="4" sm="12">
@@ -27,13 +30,15 @@
   import AppBar from "./appbar/AppBar";
   import authorInfo from "./homepageright/authorInfo";
   import newArticle from "./homepageright/newArticleTitle";
+  import articles from "./homepageleft/articles";
 
 export default {
   name: 'index',
   components: {
     AppBar,
     authorInfo,
-    newArticle
+    newArticle,
+    articles
   }
 }
 </script>

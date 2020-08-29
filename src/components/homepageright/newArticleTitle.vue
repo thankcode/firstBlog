@@ -8,11 +8,10 @@
             class="mb-2"
     >
       <ul class="newArticle_title">
-        <li v-for="item in newArticleTitle">
-          <a href="javascript:void(0)">
-            <p>{{ item.theme }}</p>
-          </a>
-
+        <li v-for="item in newArticleTitle" :key="item.id">
+          <router-link :to="'/articles/' + item.id">
+              <p>{{ item.theme }}</p>
+          </router-link>
         </li>
       </ul>
     </b-card>
@@ -61,24 +60,4 @@
     color: #6c757d ;
   }
 
-  /*去除a标签默认样式*/
-  a {
-    text-decoration: none;
-  }
-  /*正常的未被访问过的链接*/
-  a:link {
-    text-decoration: none;
-  }
-  /*已经访问过的链接*/
-  a:visited {
-    text-decoration: none;
-  }
-  /*鼠标划过(停留)的链接*/
-  a:hover {
-    text-decoration: none;
-  }
-  /* 正在点击的链接*/
-  a:active {
-    text-decoration: none;
-  }
 </style>
