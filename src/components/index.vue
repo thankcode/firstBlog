@@ -10,6 +10,7 @@
           <b-col lg="7" sm="12">
             <!--文章-->
             <!-- :key="$route.fullPath" 解决请求不跳转-->
+
             <router-view :key="$route.fullPath"></router-view>
           </b-col>
           <!--右侧导航-->

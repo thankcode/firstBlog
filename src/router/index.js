@@ -4,6 +4,8 @@ import VueRouter from 'vue-router'
 const index = () => import('../components/index')
 const articles = () => import('../components/homepageleft/articles')
 const articlesContent = () => import('../components/homepageleft/articlesContent')
+const documentFiling = () => import('../components/DocumentFiling/DocumentFiling')
+const aboutBlog = () => import('../components/aboutBlog/AboutBlog')
 
 
 Vue.use(VueRouter)
@@ -15,12 +17,20 @@ Vue.use(VueRouter)
     children:[
       {
         path:'',
-        component:articles
+        component:articles,
       },
       {
-        path:'/articles/:id',
+        path:'articles/:id',
         component:articlesContent
-      }
+      },
+      {
+        path: "filling",
+        component:documentFiling
+      },
+      {
+        path: "aboutBlog",
+        component:aboutBlog
+      },
     ]
   },
   {

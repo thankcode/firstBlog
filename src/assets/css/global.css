@@ -8,6 +8,7 @@ body {
 /*去除a标签默认样式*/
 a {
     text-decoration: none;
+    color: #Fff !important;
 }
 /*正常的未被访问过的链接*/
 a:link {

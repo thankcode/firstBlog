@@ -9,12 +9,12 @@
 
           <b-collapse id="nav-collapse" is-nav>
             <b-navbar-nav>
-              <b-nav-item href="/">首页</b-nav-item>
-              <b-nav-item href="#">文章归档</b-nav-item>
-              <b-nav-item href="#">关于博客</b-nav-item>
-              <b-nav-item href="#">友情链接</b-nav-item>
-              <b-nav-item href="#">留言板</b-nav-item>
-              <b-nav-item href="#">网站数据</b-nav-item>
+              <b-nav-item><router-link to='/'>首页</router-link></b-nav-item>
+              <b-nav-item><router-link to='/filling'>文章归档</router-link></b-nav-item>
+              <b-nav-item><router-link to='/aboutBlog'>关于博客</router-link></b-nav-item>
+              <b-nav-item>友情链接</b-nav-item>
+              <b-nav-item>留言板</b-nav-item>
+              <b-nav-item>网站数据</b-nav-item>
             </b-navbar-nav>
 
             <!-- Right aligned nav items -->
@@ -40,13 +40,13 @@
 
 <style scoped>
   .appbar{
-    background: #f8f9fa;
+    background: #737371;
   }
   .nav-link{
-    color: rgba(0,0,0,.5) !important;
+    color: #f8f9fa !important;
   }
   .navbar-brand{
-    color: rgba(0,0,0,.9) !important;
+    color: #f8f9fa !important;
   }
 
 

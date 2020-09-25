@@ -44,77 +44,7 @@
       <!--发表评论-->
       <div class="publish_comment">
         <div id="vcomments"></div>
-        <!-- <h2>发表评论</h2>
-          <el-form ref="form" :model="formData" :rules="formRoles">
-            <b-row align-h="between">
-              <b-col lg="12">
-                
-                <mark-down @md-child="getMDContent"></mark-down>
-              </b-col>
-            </b-row>
-          
-            <b-row align-h="between">
-              <b-col lg="6" sm="12">
-                <el-form-item label="姓名" prop="name">
-                  <el-input v-model="formData.name"></el-input>
-                </el-form-item>
-              </b-col>
-              <b-col lg="6" sm="12"  >
-                <el-form-item label="电子邮件地址" prop="email">
-                  <el-input v-model="formData.email"></el-input>
-                </el-form-item>
-              </b-col>
-              <b-col lg="6" sm="12">
-                <el-form-item label="网站（选填）">
-                  <el-input v-model="formData.url"></el-input>
-                </el-form-item>
-              </b-col>
-
-            </b-row>
-            <b-row>
-              <b-col lg="6" sm="12">
-                <el-form-item>
-                  <el-button type="primary" @click="submitFrom">提交</el-button>
-                  <el-button @click="resetFrom">重置</el-button>
-                </el-form-item>
-              </b-col>
-            </b-row>
-          </el-form> -->
       </div>
-      <!--评论-->
-      <!-- <div class="comment">
-        <h2>{{ commentTitle }}</h2>
-        <div class="comment_index" v-for="item in commentData" :key="item.id">
-            <b-media>
-              <template v-slot:aside>
-                <b-img blank blank-color="#ccc" width="42"  alt="placeholder"></b-img>
-              </template>
-              <h5 class="mt-0">{{ item.user }}</h5>
-              
-              <p>
-                {{ item.content }}
-              </p>
-              <b-media v-if="item.children.id">
-                <template v-slot:aside>
-                  <b-img blank blank-color="#ccc" width="42" alt="placeholder"></b-img>
-                </template>
-
-                <h5 class="mt-0" >Nested Media</h5>
-                <p class="mb-0">
-                  回复
-                </p>
-              </b-media>
-            </b-media>
-        </div>
-      </div> -->
-
-      <!-- 阅读量配置 -->
-      <!-- 
-          <span id="<Your/Path/Name>" class="leancloud_visitors" data-flag-title="Your Article Title">
-            <em class="post-meta-item-text">阅读量 </em>
-            <i class="leancloud-visitors-count">1000000</i>
-          </span>
-      -->
     </div>
   </div>
 </template>
@@ -189,20 +119,6 @@
         this.id = data.data.bodycontent.id
         this.isForbid = data.data.isForbid
 
-        // // 刷新评论
-        //    const res1 = await this.$http.get('getComment', {
-        //     params:{
-        //       id: this.$route.params.id
-        //     }
-        //   }) 
-        //   if(res1.status !== 200){
-        //     this.$message.error('服务器异常')
-        //     return 
-        //   }
-
-        //   this.commentData = res1.data
-        //   console.log(this.commentData)
-
 
           // 评论回复
           new Valine({
@@ -261,43 +177,7 @@
       /*自定义md中间发射事件 getMDContent*/
       getMDContent(data){
         this.formData.content = data
-      },
-      /*重置表单*/
-      // resetFrom(){
-      //   this.$refs['form'].resetFields()
-      // },
-      // /*提交表单*/ 
-      //  submitFrom(){
-      //   this.$refs['form'].validate(async result => {
-      //     if (!result || this.formData.content === '') {
-      //       return this.$message.error('表单验证失败')
-      //     }
-          
-      //     const res = await this.$http.post('addComment', {
-      //       formData:this.formData,
-      //       id:this.$route.params.id,
-      //     })
-      //     if(res.status !== 200){
-      //       this.$message.error('服务器异常')
-      //       return 
-      //     }
-      //     this.$message.success('评论成功')
-
-      //     // 刷新评论
-      //     const res1 = await this.$http.get('getComment', {
-      //       params:{
-      //         id: this.$route.params.id
-      //       }
-      //     }) 
-      //     if(res1.status !== 200){
-      //       this.$message.error('服务器异常')
-      //       return 
-      //     }
-
-      //     this.commentData = res1.data
-      //     console.log(this.commentData)
-      //   })
-      // }
+      }
     }
   }
 </script>
