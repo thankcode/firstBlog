@@ -12,7 +12,7 @@
               <b-nav-item><router-link to='/'>首页</router-link></b-nav-item>
               <b-nav-item><router-link to='/filling'>文章归档</router-link></b-nav-item>
               <b-nav-item><router-link to='/aboutBlog'>关于博客</router-link></b-nav-item>
-              <b-nav-item>友情链接</b-nav-item>
+              <b-nav-item><router-link to='/friendsLink'>友情链接</router-link></b-nav-item>
               <b-nav-item>留言板</b-nav-item>
               <b-nav-item>网站数据</b-nav-item>
             </b-navbar-nav>
@@ -47,6 +47,9 @@
   }
   .navbar-brand{
     color: #f8f9fa !important;
+  }
+  a{
+    color: #FFF !important;
   }
 
 

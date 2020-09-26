@@ -6,6 +6,7 @@ const articles = () => import('../components/homepageleft/articles')
 const articlesContent = () => import('../components/homepageleft/articlesContent')
 const documentFiling = () => import('../components/DocumentFiling/DocumentFiling')
 const aboutBlog = () => import('../components/aboutBlog/AboutBlog')
+const friendsLink = () => import('../components/friendslink/FriendsLink')
 
 
 Vue.use(VueRouter)
@@ -26,6 +27,10 @@ Vue.use(VueRouter)
       {
         path: "filling",
         component:documentFiling
+      },
+      {
+        path: "friendsLink",
+        component:friendsLink
       },
       {
         path: "aboutBlog",

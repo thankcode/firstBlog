@@ -26,7 +26,6 @@
                 </router-link>
               </el-tooltip>
             </div>
-
           </b-col>
           <b-col lg="6" sm="12" class="right">
             <div>下一篇</div>

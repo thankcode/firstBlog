@@ -62,8 +62,9 @@
       async getBasicsInfo(){
         const {status,data} = await  this.$http.get('getBasicsInfo',{})
         if (status!==200) return this.$message.error('服务器异常')
+        console.log(data)
         data[0].time = data[0].time.substring(0,10)
-        
+
         this.basicsInfo = data[0]
         new Valine({
           el: '#vcomments',
