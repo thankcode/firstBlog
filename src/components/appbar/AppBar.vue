@@ -40,7 +40,7 @@
 
 <style scoped>
   .appbar{
-    background: #737371;
+    background: #b9b9b9;
   }
   .nav-link{
     color: #f8f9fa !important;

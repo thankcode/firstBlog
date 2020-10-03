@@ -4,7 +4,16 @@ body {
 .card{
     margin-bottom: 30px !important;
 }
+#app > div > div > form > div:nth-child(1) > div > div > input,#app > div > div > form > div:nth-child(2) > div > div > input{
+    background-color: transparent !important;
+    color: #fff !important;
+    letter-spacing: 5px;
+}
 
+#app > div > div > form > div:nth-child(1) > label,#app > div > div > form > div:nth-child(2) > label{
+    color: #ffffff;
+    letter-spacing: 3px;
+}
 /*去除a标签默认样式*/
 
 /*正常的未被访问过的链接*/
@@ -27,3 +36,4 @@ a:active {
     display: flex ;
     justify-content: center ;
 }
+

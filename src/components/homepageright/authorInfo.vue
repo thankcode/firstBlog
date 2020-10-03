@@ -10,7 +10,7 @@
       >
         <div class="info" v-if="this.authorInfo.author">
           <div class="div_img">
-            <img src="../../assets/img/thankCode.jpg" alt="">
+            <img :src="authorInfo.author.imgPath" alt="">
             <p class="name">{{ authorInfo.author.name }}</p>
             <p class="saying">{{ authorInfo.author.saying }}</p>
           </div>
@@ -60,6 +60,7 @@
         const data = await this.$http.get('author')
         if (data.status !== 200) return this.$message.error('服务器异常')
         this.authorInfo = data.data
+        console.log(this.authorInfo)
       }
     }
   }

@@ -9,7 +9,7 @@
     >
       <div class="articles_item">
           <router-link :to="'/articles/' + item.id">
-              <img src="../../assets/img/articleImg/VueLogo.png" alt="">
+              <img :src="item.imgpath" alt="">
           </router-link>
           <router-link :to="'/articles/' + item.id">
               <header><h2>{{ item.theme }}</h2></header>
