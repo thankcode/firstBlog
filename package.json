@@ -11,7 +11,7 @@
     "core-js": "^3.6.5",
     "crypto-js": "^4.0.0",
     "element-ui": "^2.4.5",
-    "highlight.js": "^10.1.2",
+    "highlight.js": "^10.4.1",
     "marked": "^1.1.1",
     "mavon-editor": "^2.9.0",
     "valine": "^1.4.14",
