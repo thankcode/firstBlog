@@ -12,7 +12,7 @@
     "crypto-js": "^4.0.0",
     "element-ui": "^2.4.5",
     "highlight.js": "^10.1.2",
-    "marked": "^1.1.1",
+    "marked": "^2.0.0",
     "mavon-editor": "^2.9.0",
     "valine": "^1.4.14",
     "vue": "^2.6.12",
